@@ -4,16 +4,16 @@ import (
 	"fmt"
 )
 
-func main() {
+type Developer struct {
+	Name       string
+	Role       string
+	Experience int
+	Language   string
+	Salary     float64
+	Active     bool
+}
 
-	type Developer struct {
-		Name       string
-		Role       string
-		Experience int
-		Language   string
-		Salary     float64
-		Active     bool
-	}
+func main() {
 
 	mohsen := Developer{
 		Name:       "Mohsen",
