@@ -20,12 +20,6 @@ func (developer *Developer) Promote() {
 	developer.Experience++
 }
 
-func (developer Developer) Print() {
-	fmt.Println("Name:", developer.Name)
-	fmt.Println("Role", developer.Role)
-	fmt.Println("Experience:", developer.Experience)
-}
-
 func main() {
 
 	mohsen := Developer{
@@ -39,7 +33,7 @@ func main() {
 
 	mohsen.Promote()
 
-	mohsen.Print()
-
+	fmt.Println("Role:", mohsen.Role)
+	fmt.Println("Experience:", mohsen.Experience)
 	fmt.Println("Senior:", mohsen.IsSenior())
 }
